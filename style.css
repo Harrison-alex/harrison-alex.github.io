@@ -74,6 +74,51 @@ nav a:hover{
     width: 70%;
 }
 
+/*testimonial*/
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 70px 90px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.testimonial-container{
+    border-radius: 5px;
+    background-color: azure;
+    width: 30%;
+}
+.testimonial img{
+    max-width: 100%;
+    width: 100%;
+}
+.testimonial-name{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 600;
+}
+.testimonial hr{
+    width: 70%;
+    height: 2px;
+    border-width: 0;
+    background-color: rgb(88, 47, 47);
+    margin-left: auto;
+    margin-right: auto;
+}
+.career{
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
 /*responisveness*/
 @media (max-width: 1000px) {
     nav ul{
@@ -98,5 +143,15 @@ nav a:hover{
         max-width: 100%;
         width: 80%;
         align-items: center;
+    }
+    .testimonial{
+        flex-direction: column;
+    }
+    .testimonial-container{
+        max-width: 100%;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
     }
 }
